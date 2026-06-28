@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código Divino - El Método Visual para Entender la Biblia</title>
+    <title>CÓDIGO DIVINO</title>
+    <!-- Tailwind CSS para renderizar o layout do v0 de forma idêntica -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,189 +22,229 @@
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=265580768080999&ev=PageView&noscript=1"/></noscript>
-    </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        .bg-clouds {
+            background-image: url('images/imagem-nuvens - para fundo do topo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-paper {
+            background-image: url('images/imagem-papel - para fundo da pagina.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased bg-paper">
 
+    <!-- TOPBAR -->
     <div class="bg-amber-500 text-slate-950 text-center py-2 px-4 text-xs md:text-sm font-bold uppercase tracking-wider">
         ⚠️ Oferta especial de lanzamiento disponible por tiempo limitado
     </div>
 
-    <header class="relative max-w-6xl mx-auto px-4 pt-12 pb-16 text-center">
-        <span class="text-amber-400 font-bold uppercase tracking-widest text-sm bg-amber-400/10 px-4 py-1.5 rounded-full border border-amber-400/20">
-            Método Práctico e Ilustrado
-        </span>
-        <h1 class="text-4xl md:text-6xl font-black text-white mt-6 mb-6 leading-tight max-w-4xl mx-auto">
-            Comprende la Biblia de <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-200">Génesis a Apocalipsis</span> Más Rápido de lo que Imaginas
-        </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Descubre el material visual diseñado para líderes, maestros y cristianos que desean profundizar en las Escrituras con explicaciones claras, esquemas detallados e ilustraciones de alto impacto.
-        </p>
-
-        <div class="flex flex-col items-center justify-center gap-4">
-            <a href="https://pay.hotmart.com/A106475928K?checkoutMode=10" class="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 text-lg md:text-xl font-black px-8 py-5 rounded-xl shadow-2xl shadow-orange-500/20 hover:scale-105 transition-all uppercase tracking-wide w-full max-w-md border-b-4 border-orange-700">
-                Quiero Comprender la Biblia <i class="fas fa-arrow-right ml-3 text-sm"></i>
-            </a>
-            <div class="flex items-center gap-6 text-xs text-slate-400 mt-2">
-                <span><i class="fas fa-shield-alt text-amber-500 mr-1"></i> Pago 100% Seguro</span>
-                <span><i class="fas fa-bolt text-amber-500 mr-1"></i> Acceso Inmediato</span>
+    <!-- SECCIÓN 1: HERO (Com imagem do produto e fundo de nuvens) -->
+    <header class="relative bg-clouds pt-16 pb-20 px-4 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="text-left">
+                <span class="text-amber-400 font-bold uppercase tracking-widest text-xs bg-amber-400/10 px-4 py-1.5 rounded-full border border-amber-400/20">
+                    MÉTODO VISUAL E ILUSTRADO
+                </span>
+                <h1 class="text-4xl md:text-5xl font-black text-white mt-6 mb-6 leading-tight">
+                    Comprende la Biblia de <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Génesis a Apocalipsis</span> Más Rápido de lo que Imaginas
+                </h1>
+                <p class="text-base md:text-lg text-slate-300 mb-8 leading-relaxed">
+                    Descubre el material exclusivo con esboços visuais, ilustraciones y explicaciones claras para ayudarte a entender y aplicar la Biblia. Diseñado tanto para estudio personal como para profesores y líderes de iglesia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://pay.hotmart.com/A106475928K?checkoutMode=10" class="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 text-md font-black px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all uppercase tracking-wide border-b-4 border-orange-700">
+                        QUIERO COMPRENDER LA BIBLIA
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="images/imagem-produto para seção 1 .png" alt="Código Divino Mockup" class="w-full max-w-md drop-shadow-2xl object-contain">
             </div>
         </div>
     </header>
 
-    <section class="bg-slate-900 border-y border-slate-800 py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">¿Para quién es el "Código Divino"?</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Herramientas visuales y conceptuales perfectas tanto para la enseñanza colectiva como para el crecimiento espiritual privado.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/30 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-6 text-amber-400 text-xl group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Estudio Personal</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">Ideal para creyentes de todos los niveles que desean conectar historias, comprender doctrinas y retener mejor el conocimiento bíblico.</p>
-                </div>
-                <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/30 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-6 text-amber-400 text-xl group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Líderes y Maestros</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">Perfecto para profesores de escuela dominical, pastores y líderes de células que necesitan materiales visuales listos para dictar clases dinámicas.</p>
-                </div>
-                <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/30 transition-all group">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-6 text-amber-400 text-xl group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Padres de Familia</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">Una guía visual excelente para guiar los devocionales familiares y enseñar los fundamentos bíblicos a hijos de forma interactiva.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- SECCIÓN DE BENEFICIOS -->
     <section class="max-w-6xl mx-auto px-4 py-20">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">¿Qué descubrirás dentro del Código Divino?</h2>
-            <p class="text-slate-400 max-w-2xl mx-auto">Un recorrido completo y estructurado que transforma lo complejo en mapas visuales fáciles de recordar.</p>
+            <h2 class="text-3xl font-extrabold text-white mb-4">¿Para quién es este método?</h2>
+            <div class="w-24 h-1 bg-amber-500 mx-auto rounded"></div>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-900/60 backdrop-blur p-8 rounded-2xl border border-slate-800">
+                <div class="text-amber-400 text-2xl mb-4"><i class="fas fa-book-reader"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">Estudio Personal</h3>
+                <p class="text-sm text-slate-400">Para creyentes de todos los niveles que desean conectar las historias bíblicas de forma clara.</p>
+            </div>
+            <div class="bg-slate-900/60 backdrop-blur p-8 rounded-2xl border border-slate-800">
+                <div class="text-amber-400 text-2xl mb-4"><i class="fas fa-church"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">Líderes y Pastores</h3>
+                <p class="text-sm text-slate-400">Esbozos visuales ideales para preparar clases, predicaciones, células y discipulados.</p>
+            </div>
+            <div class="bg-slate-900/60 backdrop-blur p-8 rounded-2xl border border-slate-800">
+                <div class="text-amber-400 text-2xl mb-4"><i class="fas fa-users"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">Padres de Familia</h3>
+                <p class="text-sm text-slate-400">Una herramienta práctica para guiar las clases y el devocional de tus hijos de manera interactiva.</p>
+            </div>
+        </div>
+    </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex gap-4 items-start">
-                <span class="text-amber-500 mt-1"><i class="fas fa-check-circle text-lg"></i></span>
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-1">Estructura del Antiguo Testamento</h4>
-                    <p class="text-sm text-slate-400">Mapas conceptuales del Pentateuco, los libros históricos, poéticos y proféticos.</p>
-                </div>
+    <!-- SECCIÓN 9: SECCIÓN INTERMEDIA 1 -->
+    <section class="bg-slate-900/40 py-16 border-y border-slate-800 px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="images/imagem-1 para seção 9.png" alt="Contenido Ilustrado" class="w-full rounded-xl shadow-lg border border-slate-800">
             </div>
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex gap-4 items-start">
-                <span class="text-amber-500 mt-1"><i class="fas fa-check-circle text-lg"></i></span>
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-1">El Contexto de los Evangelios</h4>
-                    <p class="text-sm text-slate-400">Cronología visual de la vida de Jesús, sus milagros y las parábolas principales ilustradas.</p>
-                </div>
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-4">Visualiza las Escrituras como nunca antes</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    Nuestras ilustraciones estructurales te permiten desglosar los libros más complejos del Antiguo y Nuevo Testamento, logrando un mapa conceptual claro que facilita la retención y la enseñanza didáctica.
+                </p>
+                <img src="images/imagem-2 para seção 9.png" alt="Detalle del Método" class="w-full max-w-sm rounded-lg opacity-80">
             </div>
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex gap-4 items-start">
-                <span class="text-amber-500 mt-1"><i class="fas fa-check-circle text-lg"></i></span>
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-1">Las Epístolas y Hechos</h4>
-                    <p class="text-sm text-slate-400">El viaje del evangelio, los viajes misioneros de Pablo explicados de forma clara en gráficos.</p>
-                </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 10: SECCIÓN INTERMEDIA 2 -->
+    <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-white mb-4">Esbozos listos para usar en tus clases</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    Optimiza tu tiempo de preparación. Olvídate de pasar horas diseñando resúmenes complejos; con el Código Divino obtienes un material estructurado listo para proyectar, imprimir o enseñar directamente en tus reuniones.
+                </p>
+                <img src="images/imagem-2 para seção 10.png" alt="Esquema Teológico" class="w-full max-w-sm rounded-lg opacity-80">
             </div>
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex gap-4 items-start">
-                <span class="text-amber-500 mt-1"><i class="fas fa-check-circle text-lg"></i></span>
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-1">Descifrando Revelaciones</h4>
-                    <p class="text-sm text-slate-400">Esquemas que ayudan a desglosar las visiones y profecías clave del libro de Apocalipsis.</p>
+            <div class="order-1 md:order-2">
+                <img src="images/imagem-1 para seção 10.png" alt="Esbozo del Código" class="w-full rounded-xl shadow-lg border border-slate-800">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE BONOS CON IMÁGENES DEL REPOSITORIO -->
+    <section class="bg-slate-900/60 py-20 px-4 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">PAQUETE DE ACTUALIZACIÓN EXCLUSIVO</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2">Bonos Especiales Incluidos Hoy</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bono 4 (O bônus principal mencionado no código anterior) -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <img src="images/Bono4-Devocionales-de-Poder...png" alt="Bono 4 Devocionales de Poder" class="w-full h-48 object-contain mb-6 rounded-lg">
+                        <h4 class="font-bold text-white text-md mb-2">Devocionales de Poder: 30 días para profundizar tu fe</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Guía estructurada paso a paso para consolidar tu hábito de lectura bíblica y aplicar principios espirituales diarios.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 flex justify-between items-center">
+                        <span class="text-xs text-slate-500 line-through">Antes: $10.00</span>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-500/10 px-2 py-1 rounded">GRATIS</span>
+                    </div>
+                </div>
+
+                <!-- Bono 1 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <img src="images/Bono1-Los-10-Mandamientos-...png" alt="Bono 1 Los 10 Mandamientos" class="w-full h-48 object-contain mb-6 rounded-lg">
+                        <h4 class="font-bold text-white text-md mb-2">Los 10 Mandamientos</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Análisis profundo y visual sobre las leyes fundamentales y su impacto en la sociedad actual.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 flex justify-between items-center">
+                        <span class="text-xs text-slate-500 line-through">Antes: $7.00</span>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-500/10 px-2 py-1 rounded">GRATIS</span>
+                    </div>
+                </div>
+
+                <!-- Bono 2 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <img src="images/Bono2-Los-Milagros-de-Jesus....png" alt="Bono 2 Los Milagros de Jesús" class="w-full h-48 object-contain mb-6 rounded-lg">
+                        <h4 class="font-bold text-white text-md mb-2">Los Milagros de Jesús</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Un recorrido cronológico e ilustrado por los eventos sobrenaturales relatados en los Evangelios.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 flex justify-between items-center">
+                        <span class="text-xs text-slate-500 line-through">Antes: $7.00</span>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-500/10 px-2 py-1 rounded">GRATIS</span>
+                    </div>
+                </div>
+
+                <!-- Bono 3 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <img src="images/Bono3-Historias-Biblicas-para-t...png" alt="Bono 3 Historias Bíblicas" class="w-full h-48 object-contain mb-6 rounded-lg">
+                        <h4 class="font-bold text-white text-md mb-2">Historias Bíblicas Ilustradas</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Esquemas gráficos dinámicos perfectos para captar la atención de niños y clases juveniles.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 flex justify-between items-center">
+                        <span class="text-xs text-slate-500 line-through">Antes: $9.00</span>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-500/10 px-2 py-1 rounded">GRATIS</span>
+                    </div>
+                </div>
+
+                <!-- Bono 5 -->
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <img src="images/Bono5-Manual-de-Interpretaci...png" alt="Bono 5 Manual de Interpretación" class="w-full h-48 object-contain mb-6 rounded-lg">
+                        <h4 class="font-bold text-white text-md mb-2">Manual de Interpretación Hermenéutica</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Principios clave para entender textos antiguos en su contexto histórico sin cometer errores doctrinales.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-900 flex justify-between items-center">
+                        <span class="text-xs text-slate-500 line-through">Antes: $12.00</span>
+                        <span class="text-xs text-emerald-400 font-bold bg-emerald-500/10 px-2 py-1 rounded">GRATIS</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<section class="bg-gradient-to-b from-slate-900 to-slate-950 border-t border-slate-800 py-20 px-4">
-        <div class="max-w-4xl mx-auto bg-slate-950 rounded-3xl border border-amber-500/30 p-8 md:p-12 relative overflow-hidden shadow-2xl">
-            <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 font-black text-xs uppercase px-6 py-2 rounded-bl-xl tracking-wider">
-                ¡Regalo Exclusivo!
+    <!-- TESTIMONIOS -->
+    <section class="max-w-4xl mx-auto px-4 py-20">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-bold text-white">Testimonios Reales</h3>
+            <p class="text-xs text-slate-400 mt-1">Más de 4.000 personas ya han confiado en este material</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800">
+                <div class="text-amber-400 text-sm mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-xs text-slate-300 italic mb-4">"El Código Divino estructuró mis sermones y me dio el soporte visual que mis clases necesitaban. Una inversión excelente."</p>
+                <div class="text-xs font-bold text-white">- Carlos M., Pastor</div>
             </div>
-            <span class="text-amber-400 font-extrabold text-xs uppercase tracking-widest block mb-2">Bono de Acción Rápida</span>
-            <h3 class="text-2xl md:text-3xl font-black text-white mb-4">Devocionales de Poder: 30 días para profundizar tu fe</h3>
-            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
-                Junto con el material principal del Código Divino, te llevarás completamente gratis esta guía estructurada paso a paso para consolidar tu hábito de lectura bíblica diario, aplicar principios de autoridad espiritual y transformar tu tiempo a solas con Dios.
-            </p>
-            <div class="flex items-center gap-3">
-                <span class="text-slate-500 line-through text-sm">Antes: $10.00</span>
-                <span class="text-emerald-400 font-extrabold text-lg bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20">HOY: $0.00</span>
+            <div class="bg-slate-900/80 p-6 rounded-xl border border-slate-800">
+                <div class="text-amber-400 text-sm mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-xs text-slate-300 italic mb-4">"Las visiones de Daniel y Apocalipsis se entienden de forma inmediata gracias a estos esquemas. Lo uso en el devocional familiar."</p>
+                <div class="text-xs font-bold text-white">- María Elena G., Maestra Esc. Dominical</div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-4 py-20 border-t border-slate-900">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Más de 4,000 Personas Ya Confían en Nosotros</h2>
-            <p class="text-slate-400">Esto es lo que dicen quienes ya están usando nuestros materiales interactivos visuales.</p>
+    <!-- OFERTA FINAL Y GARANTÍA -->
+    <section class="max-w-3xl mx-auto px-4 py-16 text-center border-t border-slate-900">
+        <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-8 md:p-12 rounded-3xl border-2 border-amber-500/40 shadow-2xl max-w-md mx-auto">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400">OFERTA DE LANZAMIENTO</span>
+            <div class="text-5xl font-black text-white my-4">$9.99<span class="text-sm font-normal text-slate-500"> USD</span></div>
+            <p class="text-xs text-slate-400 mb-6 leading-relaxed">Acceso completo e inmediato de por vida al libro principal junto con todos los bonos exclusivos.</p>
+            
+            <a href="https://pay.hotmart.com/A106475928K?checkoutMode=10" class="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 text-md font-black px-6 py-4 rounded-xl shadow-lg hover:scale-105 transition-all uppercase tracking-wide w-full border-b-4 border-orange-700">
+                QUIERO COMPRENDER LA BIBLIA
+            </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800/80">
-                <div class="flex text-amber-400 mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="text-slate-300 text-sm italic leading-relaxed mb-6">"Como líder de discipulado en mi iglesia local, siempre buscaba formas de hacer los esquemas de enseñanza más claros. Este resumen visual del Código Divino transformó mis clases. Los alumnos entienden y asimilan las líneas de tiempo bíblicas enseguida."</p>
-                <div class="font-bold text-white text-sm">- Carlos M., Líder de Célula</div>
-            </div>
-            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800/80">
-                <div class="flex text-amber-400 mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="text-slate-300 text-sm italic leading-relaxed mb-6">"Comprender el contexto de los profetas menores y el Apocalipsis siempre fue difícil para mí. Gracias a las ilustraciones y mapas conceptuales del material pude armar el rompecabezas histórico en solo días. ¡Muy recomendado!"</p>
-                <div class="font-bold text-white text-sm">- María Elena G., Maestra de Escuela Dominical</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-slate-900 border-t border-slate-800 py-20 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black text-white mb-4">Accede Hoy al "Código Divino"</h2>
-            <p class="text-slate-400 mb-12">No dejes pasar la oportunidad de acelerar tu entendimiento de las Escrituras bajo este precio especial.</p>
-
-            <div class="bg-slate-950 p-8 md:p-12 rounded-3xl border-2 border-amber-500/40 max-w-md mx-auto mb-12 shadow-xl">
-                <span class="text-xs uppercase tracking-widest font-extrabold text-amber-400 block mb-2">Todo Incluido (Ebook + Bonos)</span>
-                <div class="text-5xl font-black text-white my-4">$9.99<span class="text-sm text-slate-500 font-normal"> USD</span></div>
-                <p class="text-xs text-slate-400 mb-8 leading-relaxed">Pago único. Acceso de por vida. Aunque el precio esté en USD, la plataforma convertirá de forma automática a tu moneda local de manera segura al pagar.</p>
-                
-                <a href="https://pay.hotmart.com/A106475928K?checkoutMode=10" class="inline-flex items-center justify-center bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 text-base font-black px-6 py-4 rounded-xl shadow-lg hover:scale-105 transition-all uppercase tracking-wide w-full border-b-4 border-orange-700">
-                    SÍ, QUIERO EL ACCESO INMEDIATO
-                </a>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-xl mx-auto text-left bg-slate-950/50 p-6 rounded-2xl border border-slate-800">
-                <div class="text-amber-400 text-4xl p-2"><i class="fas fa-shield-halved"></i></div>
-                <div>
-                    <h4 class="font-bold text-white mb-1">Garantía Incondicional de 7 Días</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">Prueba el material sin riesgos. Si sientes que los esquemas visuales no enriquecen tu estudio bíblico o tu enseñanza, puedes solicitar el reembolso completo sin preguntas.</p>
-                </div>
-            </div>
+        <!-- Sección de Garantía con la imagen -->
+        <div class="mt-12 flex flex-col items-center justify-center max-w-md mx-auto">
+            <img src="images/imagem-garantia para seção de garantia.png" alt="Sello de Garantía" class="w-24 mb-4 object-contain">
+            <h4 class="font-bold text-sm text-white mb-1">Garantía Incondicional de 7 Días</h4>
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm">Si dentro de los primeros 7 días consideras que el material visual no cumple tus expectativas, puedes solicitar el reembolso del 100% de tu dinero inmediatamente.</p>
         </div>
     </section>
 
-    <section class="max-w-3xl mx-auto px-4 py-20">
-        <h3 class="text-2xl md:text-3xl font-extrabold text-white text-center mb-12">Preguntas Frecuentes</h3>
-        <div class="space-y-4">
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h4 class="font-bold text-white mb-2">¿Cómo recibo el material?</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">El acceso es completamente digital. Inmediatamente después de la confirmación del pago, recibirás un correo con las credenciales y el enlace directo para descargar el material e iniciar tu lectura.</p>
-            </div>
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h4 class="font-bold text-white mb-2">¿Puedo pagar en mi moneda local?</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">¡Sí! Hotmart procesará el pago y convertirá automáticamente el valor a tu moneda (pesos, soles, etc.) según las opciones de tarjetas de crédito, débito o pasarelas locales disponibles en tu país.</p>
-            </div>
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h4 class="font-bold text-white mb-2">¿El acceso tiene límite de tiempo?</h4>
-                <p class="text-sm text-slate-400 leading-relaxed">No. Una vez adquirido, el material es tuyo para siempre. Podrás consultarlo o imprimirlo las veces que lo necesites para tus estudios personales o clases bíblicas.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-xs text-slate-600 px-4">
-        <p class="mb-2">&copy; 2026 Código Divino Oficial. Todos los derechos reservados.</p>
-        <p class="max-w-2xl mx-auto leading-relaxed">Este producto no está afiliado de manera oficial a ninguna denominación religiosa específica. Las opiniones o metodologías de síntesis visual corresponden a fines estrictamente educativos y didácticos para soporte del lector.</p>
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-[10px] text-slate-600 border-t border-slate-900 px-4">
+        <p>&copy; 2026 Código Divino. Todos los derechos reservados.</p>
     </footer>
 
 </body>
