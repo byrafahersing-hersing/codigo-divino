@@ -170,9 +170,10 @@
   margin-bottom: 0; /* Remove a margem do último item para não estourar o padding */
 }
 
-    /* ════════════════════════════════
+
+/* ════════════════════════════════
        SECTION 3 — O QUE INCLUI
-    ════════════════════════════════ */
+   ════════════════════════════════ */
     #que-incluye { background: #fff; }
     #que-incluye .inner { max-width: 900px; margin: 0 auto; text-align: center; padding: 0 16px; }
     #que-incluye h2 {
@@ -192,11 +193,12 @@
       line-height: 1.4;
     }
 
-    /* Product cards */
+    /* Product cards — MODIFICADO PARA UMA COLUNA ÚNICA MAIOR */
     .product-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
+      display: flex;
+      flex-direction: column;   /* Força ficar um abaixo do outro */
+      align-items: center;      /* Centraliza os cards na tela */
+      gap: 32px;                /* Espaçamento entre um quadro e outro */
       margin-bottom: 40px;
     }
     .product-card {
@@ -204,25 +206,32 @@
       border-radius: 12px;
       overflow: hidden;
       text-align: center;
-      padding-bottom: 24px;
+      padding-bottom: 32px;     /* Aumentado o respiro inferior */
+      width: 100%;
+      max-width: 500px;         /* Define o tamanho maior do quadro (mesma largura da seção anterior) */
     }
+    
+    /* MODIFICADO PARA NÃO CORTAR OS MOCKUPS */
     .product-card img {
       width: 100%;
-      height: 220px;
-      object-fit: cover;
+      height: auto;             /* Altura automática para respeitar a proporção da imagem */
+      max-height: 380px;        /* Limite de altura para o mockup ficar grande e nítido */
+      object-fit: contain;      /* GARANTE QUE A IMAGEM NÃO SEJA CORTADA */
+      padding-top: 24px;        /* Espaço para a imagem não colar no topo do card */
     }
-    .product-card .card-body { padding: 16px 20px 0; }
+    
+    .product-card .card-body { padding: 16px 32px 0; } /* Aumentado padding lateral do texto */
     .product-card .card-title {
       font-family: 'Playfair Display', serif;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 22px;          /* Aumentado o título proporcionalmente ao card maior */
       color: #000;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
     .product-card .card-desc {
       font-family: Arial, sans-serif;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;          /* Aumentado o texto descritivo para melhor leitura */
       color: #333;
       line-height: 1.5;
     }
@@ -230,7 +239,8 @@
     /* Additional brown-bg cards */
     .product-card.dark { background: rgb(112,79,38); }
     .product-card.dark .card-title, .product-card.dark .card-desc { color: #fff; }
-
+    
+    
     /* ════════════════════════════════
        SECTION 4 — VANTAGENS
     ════════════════════════════════ */
