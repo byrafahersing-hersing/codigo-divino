@@ -181,9 +181,10 @@
       font-weight: 500;
       font-size: 34px;
       color: #000;
-      text-align: center;      /* Garante o alinhamento do texto no centro */
-      margin: 0 auto 12px;     /* O 'auto' nas laterais centraliza o bloco na página */
-      max-width: 100%;         /* Remove o limite de 300px para o título respirar */
+      text-align: center;      /* Centraliza o texto por dentro */
+      margin: 0 auto 12px;     /* Centraliza o bloco do título na página */
+      max-width: 450px;        /* Tamanho ideal para forçar a quebra em 2 linhas */
+      width: 100%;             /* Garante que o título seja responsivo em celulares */
     }
     
     #que-incluye h2 span { color: rgb(255,195,0); }
