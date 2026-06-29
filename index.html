@@ -100,7 +100,7 @@
        SECTION 2 — O QUE É / PARA QUEM
     ════════════════════════════════ */
     #que-es { background: rgb(232,222,193); }
-    #que-es .inner { background-color: #ffffff; max-width: 900px; margin: 0 auto; text-align: center; padding: 0 16px; }
+    #que-es .inner { max-width: 900px; margin: 0 auto; text-align: center; padding: 0 16px; }
     #que-es h2 {
       font-family: 'Playfair Display', serif;
       font-weight: 500;
@@ -116,6 +116,25 @@
       line-height: 1.3;
       margin-bottom: 60px;
     }    
+
+    /* ─── ESTILIZAÇÃO DO SUBTÍTULO COMO PARTE SUPERIOR DA CAIXA ─── */
+    #que-es p.subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: #000;
+      
+      /* Criando a metade superior da caixa branca */
+      background-color: #ffffff;
+      max-width: 650px;
+      margin: 0 auto 0; /* Margem inferior zero para emendar com a lista */
+      padding: 30px 40px 10px; /* Padding inferior menor para não afastar a lista */
+      
+      /* Arredonda apenas os cantos de cima */
+      border-radius: 8px 8px 0 0; 
+      text-align: center;
+    }
+    
     #que-es .subtitle {
       font-weight: 700;
       font-size: 30px;
@@ -127,6 +146,18 @@
       text-align: left;
       max-width: 600px;
       margin: 0 auto 32px;
+      
+      /* Criando a metade inferior da caixa branca */
+      background-color: #ffffff;
+      max-width: 650px;
+      margin: 0 auto 40px; /* Margem inferior joga o botão verde para baixo */
+      padding: 10px 40px 30px; /* Padding superior menor para colar no título */
+      
+      /* Arredonda apenas os cantos de baixo */
+      border-radius: 0 0 8px 8px;
+      
+      /* Opcional: Adiciona uma sombra suave ao redor de toda a estrutura */
+      box-shadow: 0 10px 20px rgba(0,0,0,0.04);
     }
     .checkmark-list li {
       font-family: Arial, sans-serif;
