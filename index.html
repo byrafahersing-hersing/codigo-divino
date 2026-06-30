@@ -416,9 +416,10 @@
     }
     .bono-card img {
       width: 100%;
-      height: auto;          /* Deixa a altura proporcional e automática */
-      object-fit: contain;   /* Garante que a imagem inteira caiba dentro do espaço sem cortes */
-      display: block;
+      height: 240px;         /* Espaço vertical fixo e elegante para os mockups */
+      object-fit: contain;   /* Mostra o livro 100% inteiro, sem cortar nenhuma ponta */
+      background: #f4f6f9;   /* Leve fundo cinza caso a imagem seja menor que o espaço */
+      padding: 12px;         /* Margem de segurança para o livro não colar nas bordas do card */
     }
     .bono-card .bono-body { padding: 16px; }
     .bono-card .bono-tag {
