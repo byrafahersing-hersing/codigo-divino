@@ -451,6 +451,47 @@
     .bono-price s { color: rgb(204,9,9); font-weight: 700; }
     .bono-price .free { color: rgb(42,168,28); font-weight: 700; }
 
+    /* Novo quadro de valorização com a borda laranja */
+    .bonos-value-box {
+      border: 2px solid rgb(255, 102, 0); /* Borda laranja destacada */
+      border-radius: 4px;
+      padding: 24px 16px;
+      margin: 32px auto 24px;
+      max-width: 550px; /* Largura para manter o design elegante igual à imagem */
+      background-color: #fff;
+      text-align: center;
+    }
+    .bonos-value-box h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      color: #000;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+    .bonos-value-box h3 .strikethrough {
+      text-decoration: line-through;
+      font-weight: 800;
+    }
+    .bonos-value-box .value-highlight {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #1a1a1a;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+    .bonos-value-box .value-footer {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: #444;
+    }
+    .bonos-value-box .green-bold {
+      color: rgb(42, 168, 28);
+      font-weight: 800;
+    }
+
     /* ════════════════════════════════
        SECTION 7 — PREÇO
     ════════════════════════════════ */
@@ -988,6 +1029,19 @@
         </div>
       </div>
 
+    </div>
+
+    <!-- ══════════════════════════════════════════
+          NOVO BLOCO DE VALORIZAÇÃO DOS BÔNUS 
+         ══════════════════════════════════════════ -->
+    <div class="bonos-value-box">
+      <h3>🎉 ¡Todo esto valorado <br>en más de <span class="strikethrough">$49 USD</span>...</h3>
+      <p class="value-highlight">¡Aprovecha esta oportunidad divina para profundizar en la Palabra con sabiduría y entendimiento visual!</p>
+      <p class="value-footer">totalmente <span class="green-bold">GRATIS</span> solo por tiempo limitado!</p>
+    </div>
+
+    <div class="btn-wrap">
+      <a href="https://pay.hotmart.com/A106475928K?checkoutMode=10" class="btn">QUIERO LOS BONOS</a>
     </div>
 
     <div class="btn-wrap">
