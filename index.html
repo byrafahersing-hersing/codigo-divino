@@ -519,14 +519,33 @@
       max-width: 300px;
     }
 
-    #precio .price-main {
+    /* #precio .price-main {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
       font-size: 24px;
       color: rgb(7,186,25);
       margin-bottom: 28px;
       line-height: 1.2;
+    } */
+
+    #precio .price-main {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;             /* Peso ultra-bold para o preço */
+      font-size: 32px;              /* Aumentado um pouco para dar mais destaque ao preço */
+      color: rgb(7,186,25);         /* Cor verde para o preço */
+      margin-bottom: 28px;
+      line-height: 1.3;
+      text-align: center;
     }
+    
+    /* Regra para a primeira parte do texto (Branca e mais fina) */
+    #precio .price-main span {
+      color: #fff;                  /* Cor branca idêntica ao modelo */
+      font-weight: 500;             /* Peso médio/fino para criar o contraste */
+      font-size: 24px;              /* Tamanho ligeiramente menor que o preço */
+    }
+
+    
 
     #precio .price-local {
       color: #fff;
@@ -1096,7 +1115,12 @@
     
   <div class="price-all">PRECIO ESPECIAL DE LANZAMIENTO</div>
 
-  <div class="price-main">¡Llévate TODO esto por solo $4,90 USD!</div>
+  <!-- <div class="price-main">¡Llévate TODO esto por solo $4,90 USD!</div> -->
+
+  <div class="price-main">
+      <span>¡Llévate TODO esto por solo</span> <br> 
+      $4,90 USD!
+    </div>
 
   <div class="price-local">(Puedes pagar en tu moneda local)</div>
   
