@@ -683,7 +683,7 @@
     /* ════════════════════════════════
        SECTION 9 — GARANTIA
     ════════════════════════════════ */
-    #garantia { background: #fff; }
+    /* #garantia { background: #fff; }
     #garantia .inner {
       max-width: 860px;
       margin: 0 auto;
@@ -708,7 +708,78 @@
       line-height: 1.6;
       margin-bottom: 12px;
     }
-    #garantia .garantia-text strong { font-weight: 700; }
+    #garantia .garantia-text strong { font-weight: 700; } */
+
+    /* ════════════════════════════════
+           SECTION 9 — GARANTIA
+       ════════════════════════════════ */
+    #garantia { 
+      background: #fff; 
+      padding: 50px 0;
+    }
+    #garantia .inner {
+      max-width: 600px; /* Estreitado para forçar as quebras de linha elegantes do modelo */
+      margin: 0 auto;
+      padding: 0 16px;
+      text-align: center;
+    }
+    
+    /* Topo com imagem e título lado a lado */
+    #garantia .garantia-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 32px;
+      text-align: left; /* Mantém o título alinhado à esquerda relativo ao selo */
+    }
+    #garantia .garantia-img { 
+      width: 110px; /* Tamanho reduzido para equilibrar com o título */
+      flex-shrink: 0; 
+    }
+    #garantia .garantia-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #000;
+      line-height: 1.1;
+    }
+    
+    /* Corpo de texto centralizado */
+    #garantia .garantia-content {
+      text-align: center;
+    }
+    
+    /* Frase principal em destaque (Subtítulo gigante) */
+    #garantia .garantia-headline {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800; /* Peso extra bold para o destaque */
+      font-size: 26px;
+      color: #000;
+      line-height: 1.3;
+      margin-bottom: 28px;
+    }
+    
+    /* Descrições inferiores (Fontes menores e mais leves) */
+    #garantia .garantia-desc {
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      padding: 0 10px;
+    }
+    #garantia .garantia-subdesc {
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      font-size: 11px; /* Bem menor, agindo como nota de rodapé */
+      color: #555;
+      line-height: 1.5;
+    }
+    #garantia .garantia-content strong { 
+      font-weight: 700; 
+    }
 
     /* ════════════════════════════════
        SECTION 10 — DOLOR (LOST)
@@ -1209,7 +1280,7 @@
 <!-- ══════════════════════════════════════════
      SECTION 9 — GARANTIA
 ══════════════════════════════════════════ -->
-<section id="garantia" class="section">
+<!-- <section id="garantia" class="section">
   <div class="inner">
     <img
       class="garantia-img"
@@ -1226,6 +1297,35 @@
         <a href="https://pay.hotmart.com/A106475928K?checkoutMode=10" class="btn">¡Aprovecha esta oportunidad divina!</a>
       </div>
     </div>
+  </div>
+</section> -->
+
+
+  <!-- ══════════════════════════════════════════
+     SECTION 9 — GARANTIA
+══════════════════════════════════════════ -->
+<section id="garantia" class="section">
+  <div class="inner">
+    
+    <!-- Bloco superior: Selo e Título alinhados -->
+    <div class="garantia-header">
+      <img
+        class="garantia-img"
+        src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=300,fit=crop/AGBzz8n0MzULjlZX/garantia-YrDNbk5xkXtbRqee.png"
+        alt="Garantia 7 dias"
+      >
+      <h2>Garantía <br>Incondicional <br>de 7 Días</h2>
+    </div>
+
+    <!-- Bloco de Conteúdo Centralizado -->
+    <div class="garantia-content">
+      <p class="garantia-headline">¿Aún tienes dudas?<br>Tranquilo, tu compra está<br>100% protegida.</p>
+      
+      <p class="garantia-desc">Si por cualquier motivo el contenido que recibes no cumple con lo prometido, tienes hasta <strong>7 días</strong> para solicitar el reembolso <strong>completo</strong>, sin preguntas ni complicaciones.</p>
+      
+      <p class="garantia-subdesc">Recuerda que tu acesso es <strong>de por vida</strong>, y constantemente añadimos nuevos materiales diseñados para fortalecer tu fe, tu ministerio y tu enseñanza en la Iglesia.</p>
+    </div>
+
   </div>
 </section>
 
